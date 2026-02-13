@@ -2,7 +2,7 @@ name: CD Deploy
 
 on:
   workflow_run:
-    workflows: ["AI Service CI"]
+    workflows: ["CI Pipeline"]
     types:
       - completed
 
