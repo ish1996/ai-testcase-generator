@@ -7,7 +7,7 @@ RUN pip install -r requirements.txt
 
 COPY . .
 
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "10000"]
-# CMD ["sh", "-c", "uvicorn main:app --host 0.0.0.0 --port $PORT"]
+# CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "10000"]
+CMD ["sh", "-c", "uvicorn main:app --host 0.0.0.0 --port $PORT"]
 
 
